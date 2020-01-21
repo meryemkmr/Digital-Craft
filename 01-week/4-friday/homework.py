@@ -1,11 +1,11 @@
 # Small
 #1. Phonebook dictionary
 
-phonebook_dict = {
-'Alice': '703-493-1834',
-'Bob': '857-384-1234',
-'Elizabeth': '484-584-2923'
-}
+# phonebook_dict = {
+# 'Alice': '703-493-1834',
+# 'Bob': '857-384-1234',
+# 'Elizabeth': '484-584-2923'
+# }
 
 # myphone = phonebook_dict.get("Elizabeth")
 # print(myphone)
@@ -38,11 +38,11 @@ phonebook_dict = {
 # ]
 # }
 
-my_dictionary = {
-    "hello" :   "world",
-    "sqareOfTwo" : 4,
-    "theMeaningOfLife" : 42,
-    0 : 1
-}
-helloIs = my_dictionary["hello"]
-print(helloIs)
+# my_dictionary = {
+#     "hello" :   "world",
+#     "sqareOfTwo" : 4,
+#     "theMeaningOfLife" : 42,
+#     0 : 1
+# }
+# helloIs = my_dictionary["hello"]
+# print(helloIs)
