@@ -199,22 +199,22 @@
 
 
 
-class Person: 
-    def __init__(self, name, email, phone):
-        self.name = name
-        self.email = email
-        self.phone = phone
+# class Person: 
+#     def __init__(self, name, email, phone):
+#         self.name = name
+#         self.email = email
+#         self.phone = phone
     
-    def print_countact_info(self):
-        print(f"{self.name}'s email : {self.email},Sonny phone number :{self.phone}")
+#     def print_countact_info(self):
+#         print(f"{self.name}'s email : {self.email},Sonny phone number :{self.phone}")
 
     # def greet(self, other_person):
     #     print('Hello {}, I am {}!'.format(other_person.name, self.name))
 
-sonny = Person('Sonny', 'sonny@gmail.com', '485-485-4909')
-jordan = Person("jordan", 'jordan@gmail.com', '485-485-2323')
+# sonny = Person('Sonny', 'sonny@gmail.com', '485-485-4909')
+# jordan = Person("jordan", 'jordan@gmail.com', '485-485-2323')
 # sonny.greet(jordan)
 # jordan.greet(sonny)
 # print(f'{sonny.name},{sonny.email} ,{sonny.phone}')
 # print(f'{jordan.name},{jordan.email} ,{jordan.phone}')
-sonny.print_countact_info()
+# sonny.print_countact_info()
