@@ -1,0 +1,37 @@
+.header-container{
+    text-align: center;
+    background-color: rgb(224, 147, 218);
+    margin-top: 0;
+    color: black;
+}
+h1 {
+    margin-top: 0;
+    padding: 50px 0;
+    font-weight: 400;
+}
+.section-container {
+    background-color: papayawhip;
+    margin-top:20px 0;
+    padding: 20px 0;
+}
+h2 {
+    margin-top: 0;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section-1 p {
+    text-align: center;
+    margin: 20px auto;
+    width: 50%;
+}
+.section-3 img {
+    display:inline-block;
+    size: 100px;
+    font-size: medium;
+    height: 200px;
+    width: 50%;
+    background-color: powderblue;
+    
+
+}

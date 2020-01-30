@@ -199,22 +199,46 @@
 
 
 
-# class Person: 
-#     def __init__(self, name, email, phone):
-#         self.name = name
-#         self.email = email
-#         self.phone = phone
+class Person: 
+    def __init__(self, name, email, phone):
+        self.name = name
+        self.email = email
+        self.phone = phone
+        self.friends = []
     
-#     def print_countact_info(self):
-#         print(f"{self.name}'s email : {self.email},Sonny phone number :{self.phone}")
+    def print_countact_info(self):
+        print(f"{self.name}'s email : {self.email},Sonny phone number :{self.phone}")
 
-    # def greet(self, other_person):
-    #     print('Hello {}, I am {}!'.format(other_person.name, self.name))
+    def greet(self, other_person):
+        print('Hello {}, I am {}!'.format(other_person.name, self.name))
 
-# sonny = Person('Sonny', 'sonny@gmail.com', '485-485-4909')
-# jordan = Person("jordan", 'jordan@gmail.com', '485-485-2323')
-# sonny.greet(jordan)
-# jordan.greet(sonny)
-# print(f'{sonny.name},{sonny.email} ,{sonny.phone}')
-# print(f'{jordan.name},{jordan.email} ,{jordan.phone}')
-# sonny.print_countact_info()
+    def addfriend(self, other_person):
+        self.friends.append(other_person)
+
+    def num_friend(self):
+        return len(self.friends)
+
+sonny = Person('Sonny', 'sonny@gmail.com', '485-485-4909')
+jordan = Person("jordan", 'jordan@gmail.com', '485-485-2323')
+alina = Person("alina", 'alina@gmail.com', '485-485-2222')
+sonny.greet(jordan)
+jordan.greet(sonny)
+# sonny.friends.append(jordan)
+# print(sonny.friends[0].name)
+# sonny.friends.append(alina)
+# print(sonny.friends[1].name)
+# print(len(sonny.friends))
+sonny.addfriend(jordan)
+jordan.addfriend(sonny)
+alina.addfriend(jordan)
+alina.addfriend(sonny)
+num_Sonny = sonny.num_friend()
+print(num_Sonny)
+num_Jordan = jordan.num_friend()
+print(num_Sonny)
+num_Alina = alina.num_friend()
+print(num_Alina)
+
+print(f'{sonny.name},{sonny.email} ,{sonny.phone}')
+print(f'{jordan.name},{jordan.email} ,{jordan.phone}')
+sonny.print_countact_info()
