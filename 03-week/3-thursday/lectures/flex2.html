@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .parent{
+            background-color: skyblue;
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            color: white;
+            font-size: 1.5em;
+        }
+        .parent a{
+            color: white;
+            text-decoration: none;
+        }
+        .parent a:hover{
+            text-decoration: underline;
+        }
+        .fg1{
+            flex-grow: 1;
+            
+        }
+        .fg4{
+            flex-grow: 4;
+        }
+        #child1{
+            display: flex;
+        }
+        #child2{
+            display: flex;
+            justify-content: space-around;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="parent"class="parent">
+        <div id="child1" class="fg4">Company Name</div>
+        <div id="child2" class="fg1">
+            <a href="#">Home</a>
+            <a href="#">Product</a>
+            <a href="#">About</a>
+            <a href="#">Careers</a>
+            <a href="#">Content</a>
+        </div>
+    </div>
+
+
+
+
+</body>
+</html>
+
