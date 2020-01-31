@@ -18,9 +18,10 @@
             font-weight: 400;
         }
         .container{
-            /* display: flex;
+            display: flex;
             justify-content: center;
-            align-items: center; */
+            align-items: center;
+            
 
         }
         .square{
@@ -28,6 +29,7 @@
             height: 180px;
             margin-bottom: 20px;
             background-color: blueviolet;
+            margin: 0 auto;
             
         }
         .rectangle{
@@ -35,6 +37,7 @@
             height: 180px;
             margin-bottom: 20px;
             background-color: tomato;
+            margin: 0 auto;
             
 
         }
@@ -44,7 +47,30 @@
             border-bottom: 200px solid cyan;
             border-left:100px solid transparent ;
             border-right: 100px solid transparent;
+            margin: 0 auto;
 
+        }
+        .star{
+            width: 0;
+            height: 0;
+            border-bottom: 200px solid purple;
+            border-left:100px solid transparent ;
+            border-right: 100px solid transparent;
+            position: relative;
+            
+
+        }
+        .star:before{
+            position: absolute;
+            content: '';
+            height: 0;
+            width: 0;
+            border-top: 200px solid purple;
+            border-left: 130px solid transparent;
+            border-right: 130px solid transparent ;
+            top: 70px;
+            left: -130px;
+            
         }
     
     
@@ -59,6 +85,7 @@
                     <div class="square"></div>
                     <div class="rectangle"></div>
                     <div class="trapazoid"></div>
+                    <div class="star"></div>
                 
             </div>
 
