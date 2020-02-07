@@ -1,0 +1,17 @@
+/* Move down content because we have a fixed navbar that is 3.5rem tall */
+.header{
+    background-color:tomato;
+    color: #f5f5f5;
+    min-height: 100px;
+    text-align: left;
+    padding: 15px;
+    display: flex;
+}
+
+
+.body{
+    background: #f5f5f5;
+    text-align: left;
+    padding: 10px;
+    min-height: 100px;
+}

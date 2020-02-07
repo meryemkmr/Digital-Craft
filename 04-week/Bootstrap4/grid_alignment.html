@@ -78,7 +78,7 @@
 
         <!-- HORIZONTAL ALIGNED COLS (justify-content-start, end, center)-->
         <div class="container">
-            <div class="row" style="height:200px;border:1px #333 solid">
+            <div class="row justify-content-start" style="height:200px;border:1px #333 solid">
                 <div class="col-4">
                     Left Aligned Text
                 </div>
@@ -87,7 +87,7 @@
                 </div>
             </div>
 
-            <div class="row" style="height:200px;border:1px #333 solid">
+            <div class="row justify-content-center" style="height:200px;border:1px #333 solid">
                 <div class="col-4">
                     Center Aligned Text
                 </div>
@@ -95,29 +95,29 @@
                     Center Aligned Text
                 </div>
             </div>
-            <div class="row" style="height:200px;border:1px #333 solid">
-                <div class="col-4">
+            <div class="row justify-content-end" style="height:200px;border:1px #333 solid">
+                <div class="col-4 bg-warning">
                     Right Aligned Text
                 </div>
-                <div class="col-4">
+                <div class="col-4 bg-danger">
                     Right Aligned Text
                 </div>
             </div>
 
             <!-- HORIZONTAL ALIGNED COLS (justify-content-around, between)-->
-            <div class="row" style="height:200px;border:1px #333 solid">
-                <div class="col-4">
+            <div class="row justify-content-around " style="height:200px;border:1px #333 solid">
+                <div class="col-4 bg-danger">
                     Content Around
                 </div>
-                <div class="col-4">
+                <div class="col-4 bg-success">
                     Content Around
                 </div>
             </div>
-            <div class="row" style="height:200px;border:1px #333 solid">
-                <div class="col-4">
+            <div class="row justify-content-between bg-success" style="height:200px;border:1px #333 solid">
+                <div class="col-4 bg-primary">
                     Content Between
                 </div>
-                <div class="col-4">
+                <div class="col-4 bg-black">
                     Content Between
                 </div>
             </div>
@@ -150,6 +150,15 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="row" style="height: 300px;">
+        <div class="col bg-warning h-100">
+            <div class="row h-100">
+                <div class="col-6 bg-primary h-100"> how muchis this going</div>
+            </div>
+        </div>
+
+        <div class="col bg-danger h-100"></div>
     </div>
 
     <div style="margin-top:500px;"></div>

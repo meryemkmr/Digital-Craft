@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/v4-shims.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+        <h1 id="title">Survey Form</h1>
+    <div class="container">
+        <form action="" id="survey-form">
+        <div class="rowDiv">
+            <div class="questionDiv">
+            <label for="name" id="name-label">*Name:</label>
+            </div>
+            <div class="answerDiv">
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            </div>
+        </div>
+
+        <div class="rowDiv">
+            <div class="questionDiv">
+            <label for="email" id="email-label">*Email:</label>
+            </div>
+            <div class="answerDiv">
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+            </div>
+        </div>
+
+        <div class="rowDiv">
+            <div class="questionDiv">
+            <label for="age" id="number-label">Age:</label>
+            </div>
+            <div class="answerDiv">
+            <input type="number" name="age" id="number" min="1" max="150" placeholder="Enter your age">
+            </div>
+        </div>
+
+            <div class="rowDiv">
+                <ol>
+                <li>
+                <div class="questionDiv">
+                    
+                <label for="userRatings">Would i lie for you?</label>
+                </div>
+                </li>
+                <div class="answerDiv">
+                <ul>
+                    <li><label for="userRating"><input type="radio" value="yes" name="userRating">Definitely</label></li>
+                    <li><label for="userRating"><input type="radio" value="no" name="userRating">Maybe</label></li>
+                    <li><label for="userRating"><input type="radio" value="maybe" name="userRating">Not sure</label></li>
+                
+                </ul>
+                </div>
+                <li>
+                    <div class="questionDiv">
+                        
+                    <label for="userRatings">Would i lie for you?</label>
+                    </div>
+                    </li>
+                    <div class="answerDiv">
+                    <ul>
+                        <li><label for="userRating"><input type="radio" value="yes" name="userRating">Definitely</label></li>
+                        <li><label for="userRating"><input type="radio" value="no" name="userRating">Maybe</label></li>
+                        <li><label for="userRating"><input type="radio" value="maybe" name="userRating">Not sure</label></li>
+                    
+                    </ul>
+                    </div>
+            </ol>
+            </div>
+
+                <div class="rowDiv">
+                    <div class="questionDiv">
+                    <label for="comments">Anything you would like to say to us?</label>
+                    </div>
+                    <div class="answerDiv">
+                    <textarea name="comments" id="comments" placeholder="Enter your comment..."></textarea>
+                    </div>
+                </div>
+            
+                <div class="rowDiv">
+                    <button id="submit" type="submit">Submit</button>
+                </div>
+                </form>
+            </div>
+
+    
+</body>
+</html>
