@@ -45,13 +45,20 @@
 
 //     let coolerCities = cities.filter(function(city){
 
-//             // cities.temperature = city ;
+
+        // cities.temperature = city ;
 //             return city.temperature <70;
 //         })
 //         console.log(coolerCities);
 
-// // <----------------------------------------------------->
-// // 5.Cities 2
+
+
+
+
+
+
+// <----------------------------------------------------->
+// 5.Cities 2
 // var cities = [
 //     { name: 'Los Angeles', temperature: 60.0},
 //     { name: 'Atlanta', temperature: 52.0 },
@@ -204,15 +211,26 @@
 
 
 // 13.Acronym
-var arr2 = ['very', 'important', 'person'];
-function acronym(arr){
-    let str = '';
+// var arr2 = ['very', 'important', 'person'];
+// function acronym(arr){
+//     let str = '';
     
-    for(let i = 0; i < arr.length; i++){
-        str += arr[i][0];
-    }
+//     for(let i = 0; i < arr.length; i++){
+//         str += arr[i][0];
+//     }
     
-    return str;
-};
+//     return str;
+// };
 
-console.log(actoynm(arr2));
+// console.log(actoynm(arr2));
+
+
+
+const factorial = number => {
+    let product = 1;
+    for (let i = 2; i <= number; i++) {
+      product *= i;
+    }
+    return product;
+  };
+  

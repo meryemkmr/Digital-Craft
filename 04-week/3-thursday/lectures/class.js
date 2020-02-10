@@ -92,6 +92,9 @@ const companies = [
 
 
 
-
-let arr = [50,2,60,4,5];
-let myBoolen
+var a = 4;
+var b = 5;
+(function(a,b){
+    console.log(a+b);
+    return a+b;
+})(4,5)

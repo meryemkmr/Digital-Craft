@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <div id="1" style="background-color: tomato; height: 300px; width: 100%;" 
+    onclick="alert('Digital Craft')"
+    onmouseover="changeBackground()"
+    onmouseout="restoreBackground()">
+        Digital Craft
+    </div> -->
+
+    <div id="1" style="background-color: tomato; height: 300px; width: 100%;" >
+        Digital Craft
+    </div>
+
+
+    <script>
+
+        // let div = document.getElementById('1');
+        // div.addEventListener('click', function(e){
+        //     console.log(e);
+        //     alert('Hello' + " "+ e.srcElement.innerText)
+        //     })
+
+            let div = document.getElementById('1');
+            div.addEventListener('mouseover', function(e){
+            console.log(e);
+            div.setAttribute('style', 'background-color: purple; height: 300px; width: 100%; ')
+            
+            }, true)
+
+            // let div = document.getElementById('1');
+            div.addEventListener('mouseout', function(e){
+            console.log(e);
+            div.setAttribute('style', 'background-color: pink; height: 300px; width: 100%; ')
+            
+            }, true)
+
+
+
+
+
+
+
+            // let div = document.getElementById('1');
+        // div.onclick = function(){
+        //     window.alert('Hello World!')
+        // }
+
+
+        // div.onmouseover = function(){
+        //     div.setAttribute('style', 'background-color: green; height: 300px; width: 100%; ')
+        //     // window.alert('Good Bye!')
+        // }
+        // div.onmouseout = function(){
+        //         var div = document.getElementById('1');
+        //     div.setAttribute('style', 'background-color: tomato; height: 300px; width: 100%; ')
+        //     // window.alert('Welcome Back!')
+        // }
+
+        /////////differernt way of doing this way/////
+//         function changeBackground(){
+
+//         var div = document.getElementById('1');
+//         div.setAttribute('style', 'background-color: green; height: 300px; width: 100%; ')
+// }
+    </script>
+</body>
+</html>

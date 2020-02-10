@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #big-red-button{
+            background: tomato;
+            width: 200px;
+            height: 200px;
+            color: #f5f5f5;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="big-red-button">
+        <div>
+            Bid Red Bottum
+        </div>
+        <div id="count">
+
+        </div>
+    </div>
+    <script>
+        let clickCount = 0;
+        let bigRedButtonNode = document.querySelector('#big-red-button');
+        bigRedButtonNode.addEventListener('click',function(){
+            clickCount +=1;
+            let countLabelNode = document.querySelector('#count');
+            countLabelNode.textContent = clickCount.toString();
+        })
+    
+    
+    
+    </script>
+</body>
+</html>
