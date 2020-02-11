@@ -1,0 +1,104 @@
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-around;
+    background-color: #80b3ff;
+    width: 100%;
+  }
+  
+  .navbar {
+    background-color: #80b3ff;
+    width: 70%;
+    height: 10%;
+  }
+  
+  .logo {
+    background-color: #80b3ff;
+    width: 30%;
+    text-align: center;
+    display: flex;
+  }
+  
+  .nav-list {
+    padding-top: 20px;
+  }
+  
+  .title {
+    width: 20%;
+    padding-top: 15px;
+    font-size: 40px;
+    color: white;
+    margin-left: 10%;
+  }
+  
+  .col-sm {
+    text-align: left;
+  }
+  
+  .parent-div {
+    margin-top: 30px;
+    background-color: #cccccc;
+  }
+  
+  .review-title {
+    padding-top: 10px;
+  }
+  
+  .watchkit {
+    padding-top: 10px;
+  }
+  
+  .swift {
+    padding-top: 10px;
+  }
+  
+  .categories {
+    width: 70%;
+    float: right;
+    padding-top: 10px;
+    background-color: #80b3ff;
+  }
+  
+  .reviews {
+    margin-top: 3%;
+    margin-left: 7%;
+    height: 15%;
+    width: 80%;
+    background-color: #cccccc;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    font-size: 20px;
+  }
+  
+  .likes {
+    background-color: #ff8c1a;
+  }
+  
+  a {
+    color: white;
+  }
+  
+  .parent-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  
+  .row {
+    width: 90%;
+  }
+  
+  .box {
+    background-color: #cccccc;
+    margin: 20px;
+    height: 250;
+    padding-top: 100px;
+    text-align: center;
+  }
