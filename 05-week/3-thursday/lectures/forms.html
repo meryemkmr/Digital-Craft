@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form action="">
+        <input type="text">
+        <input type="radio">
+        <input type="checkbox">
+        <input type="password">
+        <button type="submit">Done</button>
+    </form> -->
+
+
+<!-- ========================================================== -->
+    <!-- <form action="/action_page.js"method = "GET">
+        First name:<br>
+        <input type="text" value="Mickey"><br>
+        Last name:<br>
+        <input type="text" name="lastname" value="Mouse"><br><br>
+        <input type="submit" value="Submit">
+    </form> -->
+
+
+<!-- ============================================= -->
+
+
+
+    <!-- <form action="/action_page.js">
+    <fieldset>
+        <legend>Personal information:</legend>
+        First name:<br>
+        <input type="text" name="firstname" value="Mickey"><br>
+        Last name:<br>
+        <input type="text" name="lastname" value="Mouse"><br><br>
+        <input type="submit" value="Submit">
+    </fieldset>
+    </form> -->
+
+    <!-- =========================================================== -->
+    <!-- <form action="/home.html">
+        <fieldset>
+            <legend>First Name</legend>
+            <input type="text" name="firstName" minlength="2" maxlength="15" required>
+        </fieldset>
+        <fieldset>
+            <legend>Last Name</legend>
+            <input type="text" name="lastName" minlength="2" maxlength="15" required>
+        </fieldset>
+        <fieldset>
+            <legend>email</legend>
+            <input type="text" name="email" minlength="2" maxlength="15" required>
+        </fieldset>
+        <fieldset>
+            <legend>amount</legend>
+            <input type="number" name="amount" minlength="2" maxlength="15"value="1"min="1" max = "10" required>
+        </fieldset>
+        <input type="submit"> -->
+
+
+        <!-- =================================================== -->
+        <!-- <fieldset>
+            <legend> HTML &  CSS </legend>
+            <input type="text"  required pattern="html|css">
+        </fieldset>
+        <input type="submit"> -->
+        <!-- =============================================== -->
+        <!-- <fieldset>
+            <legend> HTML &  CSS </legend>
+            <input type="text"  required pattern="\d*">
+        </fieldset>
+        <input type="submit">
+    </form> -->
+    <!-- =========================================================== -->
+    <!-- <input type="email" id="t2" name="email" required>
+    var email = document.getElementById("mail");
+email.addEventListener("input", function (event) {
+if (email.validity.typeMismatch) {
+    email.setCustomValidity("I expect an e-mail, darling!");
+} else {
+    email.setCustomValidity("");
+}
+});
+Constraint validation API methods = setCustomValidity
+Constraint validation API properties = validity.typeMismatch -->
+
+<!-- =========================================================== -->
+<!-- 
+<form onsubmit="myFunction()">
+    Enter name: 
+    <input type="text">
+</form> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ============================================================ -->
+
+
+<form id="myForm">
+    Enter name: 
+    <input name="brand" type="radio" value="volvo">
+    <input name="brand" type="radio" value="saab">
+    <input name="brand" type="radio" value="bmw">
+</form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <form>
+    <div>
+        <label for="choose">Would you prefer a banana or a cherry?</label>
+        <input id="choose" name="i_like" required minlength="6" maxlength="6">
+    </div>
+    <div>
+        <label for="number">How many would you like?</label>
+        <input type="number" id="number" name="amount" value="1" min="1" max="10">
+    </div>
+    <div>
+        <button>Submit</button>
+    </div>
+    </form> -->
+    <script
+        $('#myForm').submit(function(){
+        $('input:checked').val();//either volvo, saab, or bmw
+        })
+    
+src="http://code.jquery.com/jquery-3.4.1.min.js"
+integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+crossorigin="anonymous">
+
+</script>
+</body>
+</html>

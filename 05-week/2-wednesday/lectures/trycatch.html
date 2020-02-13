@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        p{
+            color: tomato;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+    <p id="demo">
+
+    </p>
+    <script>
+        // try{
+        //     allert("Hello World!")
+        // }
+        // catch(e){
+        //     let p = document.getElementById("demo");
+        //     p.textContent = e.message;
+
+        // }
+
+
+
+//===========================================================
+        //!Range Error
+//         var num = 1;
+// try {
+//     num.toPrecision(500);   // A number cannot have 500 significant digits
+// }
+// catch(err) {
+//     document.getElementById("demo").innerHTML = err.name;
+// }
+//=============================================================
+
+   //Syntax Error 
+    
+//    try {
+//   eval("alert('Hello)");   // Missing ' will produce an error
+// }
+// catch(err) {
+//   document.getElementById("demo").innerHTML = err.name;
+// }
+    
+//=======================================================
+
+
+//Type Error
+
+// var num = 1;
+// try {
+//     num.toUpperCase();   // You cannot convert a number to upper case
+// }
+// catch(err) {
+//     document.getElementById("demo").innerHTML = err.name;
+// }
+
+//=============================================================
+
+//Reference Error
+
+// var x;
+// try {
+//     x = y + 1;   // y cannot be referenced (used)
+// }
+// catch(err) {
+//     document.getElementById("demo").innerHTML = err.name;
+// }
+
+//============================================================
+
+//URI Error
+
+// try {
+//   decodeURI("%%%");   // You cannot URI decode percent signs
+// }
+// catch(err) {
+//   document.getElementById("demo").innerHTML = err.name;
+// }
+
+//============================================================
+
+//=========Catch a specific error===============
+// try {
+//     saveNumber(...);
+// } catch (e) {
+//     if (e instanceof TypeError) {
+//     // ignore TypeError
+//     } 
+//     else if(e instanceof RangeError) {
+//     // handle RangeError
+//     }
+//     else {
+//     // something else
+//     } 
+// }
+// example 
+
+// let division = (a, b) => {
+//             try{
+//                 let div = a/b;
+//                 return div;
+//             }
+//             catch(e){
+//                 if (e instanceof Infinity){
+//                     return "division by zero is not allowed"
+//                 }
+//                 else{
+//                     return e.message;
+//                 }
+//             }
+//         }
+//         let p = document.getElementById("demo");
+//         let result = division(3, "number");
+//         p.textContent = result;
+
+//=====================================================
+
+tipAmmount = (billAmmount, service)=> {
+    try{}
+    catch(e){}
+    if (service == 'good') {
+        let tipTotal = billAmmount * 0.2;
+        console.log(tipTotal);
+        return tipTotal;
+    } else if (service == 'fair') {
+        let tipTotal = billAmmount * 0.15;
+        console.log(tipTotal);
+        return tipTotal;
+    } else {
+        let tipTotal = billAmmount * 0.1;
+        console.log(tipTotal);
+        return tipTotal;
+    }
+    }
+    tipAmmount(100, 'good')
+
+    </script>
+</body>
+</html>
