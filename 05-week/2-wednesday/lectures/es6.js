@@ -1,8 +1,8 @@
-// console.log(x); 
- // ReferenceError: x is not defined
+// console.log(x);
+// ReferenceError: x is not defined
 // var x = 'hi';
 //====================================================
-// console.log(x); 
+// console.log(x);
 // ReferenceError: error
 // let x = 'hi';
 //====================================================
@@ -62,7 +62,6 @@
 //==============================================================
 //Destructuring Arrays
 
-
 // let myArray = [4,5,6,7,8];
 // let [a,b,c,d,e] = [4,5,6,7,8];
 
@@ -78,12 +77,10 @@
 // let c = myArray[2];//6
 //=================================================
 
-
 // let add = (a,b)=>{
 //     return a+b;
 // }
 // console.log(add(4,5));
-
 
 //===========================================================================
 //  4. week tuesday homework
@@ -100,11 +97,12 @@
 // }) //   if there is no paramether
 
 //===============================================================
-// let newArray = nums.map((num)=>{
-//     return num*2
-// }) 
-// console.log(nums);
-// console.log(newArray);
+let nums = [2, 3, 4, 5];
+let newArray = nums.map(num => {
+  return num * 2;
+});
+console.log(nums);
+console.log(newArray);
 
 // ==============================================================
 
@@ -136,7 +134,6 @@
 // let result = addTwoNumbers(2)
 // console.log(result);
 
-
 // ES6================
 
 // let addTwoNumbers=(x=0, y=0)=> {
@@ -146,18 +143,16 @@
 // console.log(addTwoNumbers(2));
 // console.log(addTwoNumbers());
 
-
 //=======================================
 
 // let multiplyNums = ()=> {
-    
+
 //     for (let i = 0; i < arguments.length);
 //     console.log(arguments[i]);
 
 // }
 
 // multiplyNums(3,4,7,8)
-
 
 //==================================
 // let multiplyNum= (...args)=> {
@@ -170,7 +165,6 @@
 
 //   multiplyNum(4,6,7)
 
-
 //===================================
 
 // let a ,b,c, d,arr;
@@ -180,7 +174,6 @@
 // d = [7,8]
 // arr = [0, ...a, ...b, ...c, ...d,9,10]
 // console.log(arr);
-
 
 //====================================
 
@@ -244,5 +237,3 @@
 // meryem.parentGreeting()
 
 //=============================================================
-
-    
