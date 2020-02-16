@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title id="title">DOM</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    
+    </style>
+  </head>
+  <body>
+    <!-- <div class="container-fluid mt-3">
+      <p id="result"></p>
+      <p><a href="#" name="lang1" class="page-link">JAVA</a></p>
+      <p><a href="#" name="lang2" class="page-link">JQUERY</a></p>
+      <p><a href="#" name="lang3" class="page-link">VUE</a></p>
+      <p><a href="#" name="lang4" class="page-link">NODE.JS</a></p>
+    
+
+    <form action="click" id="frmDOM">
+        <div class="form-group">
+            <label for="text1">Value1</label>
+            <input type="text" id="txt1" class="form-control" value="Node" name="txt1">
+        </div>
+        <div class="form-group"></div>
+        <label for="text2">Value2</label>
+        <input type="text" id="txt2" class="form-control"value="JS" name="txt2">
+    </form>
+    <button type="button" class="btn btn-danger" id="btn1">Click</button>
+</div> -->
+
+<!-- <div class="container-fluid mt-3">
+<p id="result"></p>
+<input type="text" id="username" name="username">
+<div id="demo">JavaScript</div>
+</div> -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!-- <div class="container-fluid mt-3">
+        <div class="alert alert-success" id="result">Event Listener</div>
+        <button id="Btn" class="btn btn-danger">Click</button>
+    </div> -->
+    <div class="container mt-3" id="DivParent">
+        <h1 id="head">JAVASCRIPT</h1>
+        <p id="p1">ANGULAR</p>
+        <p id="p2">REACT</p>
+        <p id="p3">VUE</p>
+        <p id="p4">NODE</p>
+    </div>
+        <div class="container mt-3" id="DivParent">
+        <button class="btn btn-danger" onclick="js:createElementDOM()" type="button">ADD</button>
+        <button class="btn btn-danger" onclick="js:deleteElementDOM()" type="button">DELETE</button>
+        <button class="btn btn-danger" onclick="js:replaceElementDOM()" type="button">REMOVE</button>
+    </div>
+    <script>
+         var parentDiv = document.querySelector("#DivParent");
+         var p3 = document.querySelector("#p3");
+        // function createElementDOM(){
+        //     var p = document.createElement("p");
+        //     var text = document.createTextNode("JAVASCRIPT");
+        //     p.appendChild(text);
+        //     parentDiv.insertBefore(p,p3) //istedigim yere ekler
+        //     // parentDiv.appendChild(p);  sona ekler
+        // }
+        // function deleteElementDOM(){
+        //     parentDiv.removeChild(p3)
+            
+        // }
+
+        function replaceElementDOM(){
+            var p = document.createElement("p");
+            var text = document.createTextNode("new text")
+            p.appendChild(text)
+            parentDiv.replaceChild(p,p1)
+            // parentDiv.appendChild(p)
+        }
+        
+
+        // var Btn = document.querySelector("#Btn");
+        // var result = document.querySelector("#result");
+        // Btn.addEventListener("click",showDate);
+        // function showDate(){
+        //     result.innerHTML = "<span>"+Date()+"</span>";
+
+        // }
+        // var result = document.querySelector("#result");
+        // // var demo = document.querySelector("#demo");
+        // var username = document.querySelector("#username");
+
+
+        // username.onkeydown = function(){
+        //     result.innerHTML = "onkeydown: Clik me!";
+
+        // }
+        // username.onkeyup = function(){
+        //     result.innerHTML = "onkeydown: cliked!";
+            
+        // }
+
+
+
+        // demo.onmousedown = function(){
+        //     this.style.background = "red";
+        //     this.innerHTML = "Hello";
+
+        // }
+        // demo.onmouseup = function(){
+        //     this.style.background = "blue";
+        //     this.innerHTML = "Bye";
+            
+        // }
+        // demo.ondblclick = function(){
+        //     this.style.background = "yellow";
+        //     this.innerHTML = "Welcome Back";
+            
+        // }
+        // demo.onFocus = function (){
+        //     this.style.background = "grey";
+        //     this.style.padding = "12px";
+        //     this.style.color = "white";
+            
+        // }
+        
+        //=================================================================
+        // var btn1 = document.querySelector("#btn1");
+        // btn1.onclick = squareRoot();
+        // function squareRoot(){
+        //     var  getNum , result ;
+        //     getNum =  prompt("Please enter a number");
+        //     result = Math.sqrt(getNum);
+        //     result = document.querySelector("#txt1").innerHTML;
+        // }
+
+        //======================================================================
+        // function getDOM(){
+        //     var  findElement,i ,message ="", result;
+        //     findElement = document.forms["frmDOM"]
+        //     for(i=0;i<findElement.lenght;i++){
+        //         message+=findElement[i].value
+        //     }
+        //     result = document.querySelector("#result");
+        //     result.innerHTML
+        // }
+     </script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+      
+    ></script>
+    
+  </body>
+</html>
