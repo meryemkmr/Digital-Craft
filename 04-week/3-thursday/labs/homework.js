@@ -132,7 +132,26 @@
 // 9.Sort an array, 3
 
 // var arr = [[1, 3, 4],[2, 4, 6, 8],[3, 6] ];
-
+// function sumArr(total, num) {
+//     return total + num;
+//   }
+  
+//   function compareArr(a, b) {
+//     var A = a.reduce(sumArr);
+//     var B = b.reduce(sumArr);
+//     return A - B;
+//   }
+  
+//   function sortArr(arr) {
+//     return arr.sort(compareArr);
+//   }
+  
+//   var arr = [
+//     [1, 3, 4],
+//     [3, 6],
+//     [2, 4, 6, 8]
+//   ];
+//   console.log(sortArr(arr));
 
 
 
@@ -226,11 +245,41 @@
 
 
 
-const factorial = number => {
-    let product = 1;
-    for (let i = 2; i <= number; i++) {
-      product *= i;
-    }
-    return product;
-  };
+// const factorial = number => {
+//     let product = 1;
+//     for (let i = 2; i <= number; i++) {
+//       product *= i;
+//     }
+//     return product;
+//   };
   
+//Large
+
+//1.forEach
+//Implement your own custom forEach function which takes two 
+// arguments: an array arr and a function fun. It will call fun 
+// passing each item in arr to fun as the first argument.
+
+// function customForEach(arr, fun) {
+//     for (var i = 0; i < arr.length; i++) {
+//       fun(arr[i]);
+//     }
+//   }
+  
+//   var arr = [{ name: 'Bob' }, { name: 'Alice' }, { name: 'Joe' }];
+//   customForEach(arr, function(person) {
+//     console.log('Hello, ' + person.name + '!');
+//   });
+
+
+// 2.map
+  // Implement your own custom map function which takes two 
+  //arguments: an array arr and a function fun.
+  // It will return a new array, 
+  //with each of its results being the result of calling fun with each array element.
+
+  function customMap(arr,fun){
+    return fun(arr);
+  }
+  var values = [1, 2, 3, 4, -5];
+ console.log(customMap(values, square));
