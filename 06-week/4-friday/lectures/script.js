@@ -9,7 +9,7 @@ let menu = document.getElementById('menu');
 //----------------------------------------------------------------
 
 
-dishes.map(each => {
+dishes.forEach(each => {
     let title = each.title
     let course = each.course
     let description = each.description
