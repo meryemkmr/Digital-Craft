@@ -1,0 +1,33 @@
+.container{
+    margin-top: 2%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 10%;
+  
+  }
+  .navbar{
+    border-bottom: 2px solid;
+  }
+  #dishListDiv{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  
+  
+  
+  }
+  #dishList{
+    list-style: none;
+    margin-top: 1%;
+  
+  }
+  li{
+    margin:1%;
+    display:flex;
+    flex-direction: column;
+    width:25%;
+  }
+  /* .nav-item{
+    margin-left: 10%;
+  } */
