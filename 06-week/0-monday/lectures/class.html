@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    hello world
+
+    <ul>
+        
+    </ul>
+    <script>
+        // fetch('http://jsonplaceholder.typicode.com/todos')
+        // .then(response => response.json())
+        // .then(json => {console.log(json)})
+
+        // fetch('http://jsonplaceholder.typicode.com/todos')
+        // .then((response)=>{
+        //     return response.json()
+        // })
+        // .then((jsonArr)=>{
+        //     console.log(jsonArr)
+        //     jsonArr.forEach((todoObj)=>{
+        //         console.log(todoObj.title);
+        //     })
+        // })
+
+
+
+        // fetch("https://jsonplaceholder.typicode.com/todos")
+        // .then((response)=>{
+
+        //     return response.json();
+
+        // })
+        // .then((jsonArr)=>{
+        //     console.log(jsonArr);
+
+        //     let liTags = jsonArr.map((comment)=>{
+        //         return `<li>${comment.email}</li>`
+        //     })
+        // let ul = document.querySelector("ul");
+        // ul.innerHTML = liTags.join("");
+        // })
+
+
+        fetch('https://jsonplaceholder.typicode.com/comments')
+        .then((response)=>{
+            return response.json();
+        })
+        .then((jsonArr)=>{
+            console.log(jsonArr);
+            let liArray = jsonArr.map((comment)=>{
+                return `<li>${comment.email}</li>`
+            })
+            let ul = document.querySelector('ul');
+            ul.innerHTML = liArray.join('');
+        })
+       
+    </script>
+</body>
+</html>
