@@ -1,0 +1,26 @@
+/* div {
+    height: 50px;
+    width: 50px;
+    border: 1px solid #f00;
+    border-radius: 5px;
+  }
+  
+  .container {
+    height: 200px;
+    width: 200px;
+    border-color: black;
+    display:  flex;
+    align-items: flex-end;
+    justify-content:  center;
+  }
+  
+  .container > div {
+  
+  } */
+
+  .change{
+    color: blueviolet;
+    font-size: 100px;
+    border: black solid 10px;
+
+  }
