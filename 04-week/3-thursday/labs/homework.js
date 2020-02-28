@@ -270,6 +270,8 @@
 //   customForEach(arr, function(person) {
 //     console.log('Hello, ' + person.name + '!');
 //   });
+//===========================================================
+
 
 
 // 2.map
@@ -278,8 +280,48 @@
   // It will return a new array, 
   //with each of its results being the result of calling fun with each array element.
 
-  function customMap(arr,fun){
-    return fun(arr);
+//   function customMap(arr,fun){
+//     return fun(arr);
+//   }
+//   var values = [1, 2, 3, 4, -5];
+//  console.log(customMap(values, square));
+
+//==================================================
+
+//  3.Caesar Cipher
+// Rewrite this cipher function without using a loop,
+// using the help of array's map, join, and string's split method.
+
+// function cipher(text)
+// { var alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split(''); var result = '';
+// for (var i = 0; i < text.length; i++) {
+//    var chr = text[i];
+//    var idx = alphabet.indexOf(chr.toUpperCase());
+//    var newIdx = idx + 13;
+//    if (newIdx >= alphabet.length) {
+//      newIdx -= 26;
+//    }
+//    result += alphabet[newIdx];
+//    }
+//    return result;
+// } // You can assume that the text is only one word, all letters are capitalized, and the offset is always 13 var encrypted = cipher('GENIUS');
+// console.log(encrypted);
+
+
+
+function myCipher(text) {
+    var alphabet = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('');
+    var letters = text.split('');
+  
+    var newLetters = letters.map(letter => {
+      if (alphabet.indexOf(letter.toUpperCase()) + 13 >= 26) {
+        return alphabet[alphabet.indexOf(letter.toUpperCase()) + 13 - 26];
+      } else {
+        return alphabet[alphabet.indexOf(letter.toUpperCase()) + 13];
+      }
+    });
+    var result = newLetters.join('');
+    return result;
   }
-  var values = [1, 2, 3, 4, -5];
- console.log(customMap(values, square));
+  
+  // console.log(myCipher('this is my cipherrrr'));
