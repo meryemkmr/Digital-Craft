@@ -35,11 +35,17 @@ app.get('/hello1', (req, res)=>{
 })
 app.get('/year/:age', (req, res)=>{
 
-    let age = Number(req.param('age'))
+    let age = (req.param('age'))
 
     let year = 2020-age
     res.send(`You were born in ${year}`); 
-});
+})
+app.get('/flights/:from-:to', (req, res) =>{
+    var from = req.param("from")
+    var to = req.param("to")
+    res.send(`<ul><li>Departing: ${from}</li>
+             <li>Arriving: ${to}</li></ul>`)
+  });
 
 
 
