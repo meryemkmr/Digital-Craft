@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div><a href="/cars/0"></a>lambo truck</div>
+    <div><a href="/cars/1"></a>tesla model S</div>
+    <div><a href="/cars/2"></a>Cyber Truck</div>
+
+
+    <h2><%= carBlogs.carName %></h2>
+    <div style="font-size: small; font-style: italic; color: darkgray"><%= carBlogs.author %></div>
+    <%= carBlogs.header %>
+    <div><%= carBlogs.body %> </div>
+    <img width="300px" src="<%= carBlogs.imageURL %>" alt="">
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>    
+    Hey, this is an ejs file
+    <div  class="header">
+        <%= pageTitle %>
+    </div>
+    <%= description %>
+    <% for(let i = 0; i<= fruitList.length; i++){ %>
+       <h2> <%= fruitList[i] %></h2>
+    <%} %>
+   <!-- <%= fruitList %> -->
+</body>
+</html>
