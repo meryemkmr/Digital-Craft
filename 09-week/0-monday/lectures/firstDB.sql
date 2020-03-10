@@ -86,3 +86,24 @@
 -- SELECT COUNT(*) FROM student2 WHERE name = 'meryem';
 
 -- SELECT COUNT(*) FROM student2 WHERE name = 'meryem';
+
+
+-- CREATE TABLE student4 (
+--   id SERIAL NOT NULL PRIMARY KEY,
+--   name UNIQUE VARCHAR,
+--   github VARCHAR,
+--   points INTEGER DEFAULT 0,
+--   start_date DATE,
+--   graduated BOOLEAN DEFAULT FALSE
+-- );
+-- INSERT INTO student4 (name, github) VALUES ('Jason', 'JEphraim');
+-- SELECT name, github_username FROM student2 WHERE name='Alex';
+-- SELECT name, points  FROM student2 WHERE points > 50;
+-- SELECT * FROM student2 WHERE name ilike '%al%';
+-- SELECT * FROM student2 WHERE website is NULL
+-- ALTER TABLE student2 ADD last_name varchar(15);
+-- ALTER TABLE student2 DROP COLUMN last_name;
+-- ALTER TABLE student2 ALTER COLUMN name TYPE varchar(15);
+-- SELECT COUNT(*) FROM student2 WHERE name='Alex';
+-- SELECT MIN(points) FROM student2;
+-- SELECT * FROM student2 ORDER BY name ASC LIMIT 5 OFFSET 5;
