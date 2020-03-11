@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <% dishes.forEach(record => { %>
+        <h1><%= record.name %> </h1>
+        <h2><%= record.description %> </h2>
+        <h3>price: <%= record.price %> </h3>
+        <% if (record.imageurl) { %> 
+            <img src="<%= record.imageurl %>" height='200px'>
+            <% } else { %>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg" height='200px' alt="">
+                <% } %>
+    <% }) %>
+    
+</body>
+</html>
