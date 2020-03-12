@@ -1,0 +1,10 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": null,
+    "database": "blogs_with_sqlz",
+    "host": "127.0.0.1",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  }
+}
