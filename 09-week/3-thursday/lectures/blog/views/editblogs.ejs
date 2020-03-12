@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  Edit Blogs
+
+  <form action="/editblogs" method="POST">
+
+    <input type="text" placeholder="title" name="title">
+
+    <select name="author" id="">
+
+      <% authors.forEach(author =>{ %>
+      <option value="<%= author.id %>"><%= author.name %></option>
+      <% }) %>
+
+    </select>
+
+    <select name="category" id="">
+
+      <% categories.forEach(category =>{ %>
+      <option value="<%= category.id %>"> <%= category.name %> </option>
+      <% }) %>
+
+    </select>
+
+    <textarea name="body" cols="30" rows="10">
+    </textarea>
+
+    <input type="submit" value="Submit">
+
+  </form>
+</body>
+
+</html>
