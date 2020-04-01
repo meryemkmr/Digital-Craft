@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Adoption</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="../../../css/index.css">
+    <link rel="stylesheet" href="../../../css/nav.css">
+    <link rel="stylesheet" href="../../../css/ideas.css">
+  </head>
+
+
+  <nav class="navbar navbar-expand-sm sticky-top navbar-dark bg-dark">
+      <a class="navbar-brand font-weight-bold lightup" href="/">Adoption</i></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="nav navbar-nav navbar-right ml-auto mt-2 mt-lg-0">
+              <!-- <li><p class="navbar-text">Already have an account?</p></li> -->
+              <li class="nav-item navbar-right mr-3" >
+                  <button class="btn btn-secondary btn-block btnLightUp" id="createProjectButton"><a href="/newProject" class="text-light">Share Your Idea!</button></a>
+              </li> 
+              <li class="dropdown">
+                  <button type="button" class="btn btn-secondary dropdown-toggle btnLightUp" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Login
+                  </button>
+                  <ul id="login-dp" class="dropdown-menu dropdown-menu-right">
+                      <li>
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <form class="form" role="form" method="post" action="./login" accept-charset="UTF-8" id="login-nav">
+                                      <div class="form-group">
+                                              <label class="sr-only" for="email">Email address</label>
+                                              <input
+                                                  type="email"
+                                                  id="email"
+                                                  name="email"
+                                                  class="form-control"
+                                                  placeholder="Enter Email" required
+                                              />
+                                      </div>
+                                      <div class="form-group">
+                                              <label class="sr-only" for="password">Password</label>
+                                              <input
+                                                  type="password"
+                                                  id="password"
+                                                  name="password"
+                                                  class="form-control"
+                                                  placeholder="Enter Password" required
+                                              /> 
+                                            <div class="help-block text-right"><a href="">Forget the password ?</a></div>
+                                      </div>
+                                      <div class="form-group">
+                                              <button type="submit" class="btn btn-dark btn-block btnLightUp">Sign in</button>
+                                      </div>
+                                      <div class="checkbox">
+                                              <label>
+                                              <input type="checkbox"> keep me logged-in
+                                              </label>
+                                      </div>
+                                  </form>
+                              </div>
+                              <div class="bottom text-center">
+                                  New here? <a href="register"><b>Join Us</b></a>
+                              </div>
+                          </div>
+                      </li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
+      </nav>
+
+
+
+  <body>

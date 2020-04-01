@@ -1,0 +1,73 @@
+.btnLightUp:hover {
+    background-color: rgb(255, 255, 121);
+    box-shadow: 1px 1px 2px rgb(255, 255, 121), 0 0 25px rgb(255, 255, 121), 0 0 5px rgb(255, 255, 121);
+    color: rgb(70, 70, 70);
+}
+.lightup:hover{
+    color: rgb(255, 255, 121)!important;
+    text-shadow: 1px 1px 2px rgb(255, 255, 121), 0 0 25px rgb(255, 255, 121), 0 0 5px rgb(255, 255, 121);
+}
+.indieFont {
+    font-family: 'Indie Flower', cursive,
+}
+
+.section{
+    height: 450px;
+}
+
+.header{
+    height: 350px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.headerImg{
+    min-height: 100%;
+}
+
+.imgHeight{
+    height: 125px;
+    overflow: hidden;
+}
+
+.imgGrid{
+    min-width: 150%;
+}
+
+.imgGrid2{
+    width: 100%;
+}
+
+.boxShadow{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.parallax { 
+    background-image: url("../images/bg.jpg");
+    height: 300px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax2 { 
+    background-image: url("../images/bg.jpg");
+    height: 150px; 
+    background-attachment: scroll;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* @media (max-width: @screen-xs) {
+    body{font-size: 10px;}
+}
+
+@media (max-width: @screen-sm) {
+    body{font-size: 14px;}
+} */
+
+h1{
+    font-size: 200%;
+}
