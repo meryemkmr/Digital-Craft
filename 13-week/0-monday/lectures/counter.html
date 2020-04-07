@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    Hellloooooooooo
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.5/redux.min.js"></script>
+    <script>
+
+increment = () => {
+
+//return an object
+// action
+return {
+    type: "Increment"
+    
+}
+}
+decrement = () => {
+        return{
+            type: "Decrement"
+        }
+    }
+ let initialState ={
+     count: 0
+ }
+
+
+
+ reducer = (state,action) => {
+     if(state === undefined){
+         state === initialState
+     }
+     if(action.type === "Increment"){
+         return{
+            ...state,
+            count: state.count+1
+         } 
+     }
+     else if(action.type === "Decrement"){
+         return{
+             ...state,
+             count: state.count -1
+         }
+     }
+ }
+ // cerate store
+
+ let store = Redux.createStore(reducer);
+    store.subscribe(showState);
+    
+    function showState() {
+            console.log(store.getState())
+        }
+
+        store.dispatch(increment())
+        store.dispatch(increment())
+        store.dispatch(increment())
+        store.dispatch(increment())
+        store.dispatch(decrement());
+        store.dispatch(decrement());
+        store.dispatch(decrement());
+        store.dispatch(decrement());
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
