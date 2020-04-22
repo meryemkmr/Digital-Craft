@@ -24,19 +24,7 @@ class Counter extends Component {
     );
   }
 }
-//Maps global state to property in component
-let mapStateToProps = state => {
-  return {
-    count: state.count
-  };
-};
-//Allows the store to invoke the function. Reason for syntax.
-let mapDispatchToProps = dispatch => {
-  return {
-    onIncreaseClick: () => dispatch(increaseAction())
-  };
-};
-const App = connect(mapStateToProps, mapDispatchToProps)(Counter);
+
 let increaseAction = () => {
   return {
     type: "Increase"
@@ -58,6 +46,20 @@ let counterReducer = (state, action) => {
     return state;
   }
 };
+
+//Maps global state to property in component
+let mapStateToProps = state => {
+  return {
+    count: state.count
+  };
+};
+//Allows the store to invoke the function. Reason for syntax.
+let mapDispatchToProps = dispatch => {
+  return {
+    onIncreaseClick: () => dispatch(increaseAction())
+  };
+};
+const App = connect(mapStateToProps, mapDispatchToProps)(Counter);
 let store = createStore(counterReducer);
 // export default Counter;
 ReactDOM.render(
